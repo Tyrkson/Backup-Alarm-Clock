@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hello"
+    tools:context="ahto.yellowduck.MainActivity">
+
+
+    <Button
+        android:text="@string/done"
+        android:background="@drawable/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/done1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:text="@string/alarm_music"
+        android:paddingStart="24dp"
+        android:gravity="center_vertical|start"
+        android:background="#00ffffff"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:id="@+id/MUSIC"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/vibratsioon"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/alarm_volume"
+        android:textSize="16sp"
+        android:paddingStart="24dp"
+        android:gravity="center_vertical|start"
+        android:layout_width="162dp"
+        android:layout_height="32dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/songName"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/MUSIC"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:thumbTint="#00FF00"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/alarm_vibration"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingEnd="12dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:paddingStart="24dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/vibratsioon"
+        android:layout_marginBottom="138dp"
+        android:layout_above="@+id/done1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/song_name"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:id="@+id/name"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingEnd="24dp"
+        android:gravity="center_vertical|start"
+        android:textAlignment="gravity"
+        tools:textColor="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/MUSIC"
+        android:layout_toEndOf="@+id/MUSIC" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="162dp"
+        android:layout_height="32dp"
+        android:max="15"
+        android:progress="7"
+        android:id="@+id/seekBar3"
+        android:layout_alignTop="@+id/songName"
+        android:layout_toEndOf="@+id/MUSIC" />
+
+
+</RelativeLayout>

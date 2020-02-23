@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background = "@drawable/hello"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:id="@+id/Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="600dp"
+                    android:orientation="horizontal">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="600dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:weightSum="1"
+                            android:minHeight="600dp"
+                            android:minWidth="600dp">
+
+                            <ImageButton
+                                android:background="@android:color/transparent"
+                                android:textColor="@color/colorAccent"
+                                android:tint="@color/colorAccent"
+                                android:scaleType="fitCenter"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:layout_gravity="bottom"
+                                app:srcCompat="@android:drawable/ic_input_add"
+                                android:id="@+id/lisa" />
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:minHeight="600dp">
+
+
+
+                                <!---<ImageButton
+                                    android:id="@+id/onoff"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_width="40dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+                                    android:scaleType="fitCenter"
+                                    android:tint="@color/colorAccent"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1" />
+
+                                <Button
+                                    android:id="@+id/settings"
+                                    android:layout_width="300dp"
+                                    android:text="@string/z"
+                                    android:textSize="24sp"
+                                    android:background="@drawable/transparenttest"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:layout_marginEnd="30dp"
+                                    android:paddingStart="-20dp"
+                                    />-->
+
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:minHeight="600dp"
+                                    android:id="@+id/displayLinear"
+                                    android:background="@android:color/transparent"
+                                    android:orientation="vertical"
+                                    android:stretchColumns="1"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true">
+                                </TableLayout>
+
+
+
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="600dp"
+                    android:background="@drawable/hello"
+                    android:orientation="vertical">
+
+
+
+                    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="600dp">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/Cx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="600dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                            <Button
+                                android:text="ABOUT US"
+                                android:background="@drawable/listbutton"
+                                android:foreground="@drawable/rippleeffecteraldi"
+                                android:layout_width="match_parent"
+                                android:layout_height="141dp"
+                                android:id="@+id/wot"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+                            <ToggleButton
+                                android:textOn="@string/niggahigga"
+                                android:background="@drawable/listbutton"
+                                android:textOff="@string/niggahigga2"
+                                android:foreground="@drawable/rippleeffecteraldi"
+                                android:layout_width="300dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/timeFormat" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+</RelativeLayout>

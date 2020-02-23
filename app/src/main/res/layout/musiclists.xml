@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@drawable/hello"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="ahto.yellowduck.MainActivity">
+
+    <Button
+        android:text="Mp3 Music"
+        android:background="@drawable/listbutton"
+        android:foreground="@drawable/rippleeffecteraldi"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:id="@+id/nimetu2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Ringtone"
+        android:background="@drawable/listbutton"
+        android:foreground="@drawable/rippleeffecteraldi"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:id="@+id/nimetu1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

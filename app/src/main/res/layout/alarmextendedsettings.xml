@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/hello"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/alarm_days"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <CheckBox
+        android:text="@string/monday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:text="@string/tuesday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:text="@string/wednesday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:text="@string/thursday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:text="@string/friday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox5" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:text="@string/saturday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox6" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:text="@string/sunday"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox7" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <Button
+        android:background="@drawable/done"
+        android:text="@string/done"
+        android:layout_marginStart="140dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysback" />
+
+
+</LinearLayout>

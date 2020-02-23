@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="600dp"
+    android:background="@drawable/hello"
+    android:orientation="vertical">
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="600dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/Cx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="600dp"
+            android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+            <Button
+            android:text="ABOUT US"
+            android:background="@drawable/listbutton"
+            android:foreground="@drawable/rippleeffecteraldi"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:id="@+id/wot"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ToggleButton
+                android:textOff="@string/niggahigga"
+                android:background="@drawable/listbutton"
+                android:textOn="@string/niggahigga2"
+                android:foreground="@drawable/rippleeffecteraldi"
+                android:layout_width="300dp"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonxd" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@drawable/hello"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="ahto.alarm.MainActivity">
+
+    <ImageButton
+        android:id="@+id/onoff"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:foreground="@drawable/myimage"
+        android:adjustViewBounds="true"
+        android:tint="@color/colorAccent"
+        android:background="@drawable/test2layoutimagenupp"
+        android:shadowColor="#1D95A8"
+        android:shadowDx="-3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:layout_marginTop="78dp"
+        android:layout_marginStart="23dp" />
+
+    <Button
+        android:id="@+id/angry_btn"
+
+        android:text="5:10"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:background="@drawable/test2layouttekstinupp"
+        android:foreground="@drawable/rippleeffecteraldi"
+        android:shadowColor="#1D95A8"
+        android:shadowDx="-3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:layout_alignTop="@+id/onoff"
+        android:layout_toEndOf="@+id/onoff" />
+
+
+</RelativeLayout> -->

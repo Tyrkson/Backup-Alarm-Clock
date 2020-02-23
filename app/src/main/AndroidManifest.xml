@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ahto.yellowduck">
+    android:installLocation="InternalOnly"
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="ahto.yellowduck.MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="ahto.yellowduck.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="ahto.yellowduck.AlarmMaker"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.Pop"
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:screenOrientation="sensorPortrait"
+            />
+        <activity android:name="ahto.yellowduck.CreateSound"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.SetMessage"
+            android:configChanges="orientation"
+        android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.RingtoneList"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.Snooze"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.ContactsList"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.AlarmDays"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.Mp3List"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.Musiclists"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name="ahto.yellowduck.Documentation"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"/>
+
+
+        <receiver android:name="ahto.yellowduck.AlarmReceiver"/>
+        <service android:name="ahto.yellowduck.RingtonePlayingService"
+            android:enabled="true"/>
+        <service android:name="ahto.yellowduck.RebootService" />
+
+    </application>
+</manifest>

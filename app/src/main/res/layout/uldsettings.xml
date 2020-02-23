@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/hello"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:layout_marginStart="24dp"
+        android:textSize="24dp"
+        android:text="US timepicker format"
+        android:paddingStart="12dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox8" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
